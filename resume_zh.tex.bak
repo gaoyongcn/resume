@@ -1,0 +1,147 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-2018 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage{xkeyval}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\usepackage{fontawesome}
+
+
+
+%\setCJKmainfont{Adobe Song Std L}  % 如果有安装Adobe Song 字体，就用这个吧
+\setCJKmainfont{SimSun}             % 没有安装Adobe Song 字体的就换回SimSun字体吧
+\setCJKfamilyfont{song}{SimSun}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{setspace}
+%\setlength{\hintscolumnwidth}{6cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{7cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{刘帝伟}
+\familyname{}
+\title{\LARGE{机器学习 \& 数据挖掘}}            % optional, remove the line if not wanted
+%{\textcolor[rgb]{0.30,0.50,0.70}{}
+\address{湖南长沙}{ 1993-07-13}                      % optional, remove the line if not wanted
+\phone{(+86)187-0748-9940}
+\email{ csu.ldw@csu.edu.cn }
+%\fax{optional}                                   % optional, remove the line if not wanted
+\extrainfo{\faHome \ \url{http://www.csuldw.com}} % optional, remove the line if not wanted
+%\extrainfo{\faGithub \ \url{github.com/csuldw}}
+\photo[60pt]{avatar.png}                                % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}      % optional, remove the line if not wante
+
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\begin{spacing}{1.01}%%行间距变为1.1
+
+\maketitle
+\section{教育背景}
+
+\cvline{2014 - 现在}{中南大学软件学院,硕士,软件工程,预计2017年6月毕业.}
+\cvline{2009 - 2013}{湖南农业大学东方科技学院,本科,信息与计算科学,理学学士学位.}
+
+\section{专业技能}
+\cventry{编程}{\textnormal{Python, C/C++, Java, Matlab and SQL, 有相关实践经验}}{}{}{}{}
+\cventry{擅长}{\textnormal{Machine Learning, Data Mining, Statistical Modeling and Data Structure}} {}{}{}{}
+\cventry{熟悉}{\textnormal{Linux, Vim, Shell, Git, SVN, scikit-learn, Markdown, LaTeX, SPSS, CSS, JavaScript, XML and HTML}}{}{}{}{}
+\cventry{语言}{\textnormal{普通话,英语 (CET-6, CSDN云计算栏目机器学习兼职翻译人员之一)}}{}{}{}{}
+\cventry{社区}{\textnormal{GitHub(\url{https://github.com/csuldw}); CSDN(\url{http://blog.csdn.net/dream_angel_z})}}{}{}{}{}
+
+%\section{活动社区}
+%\cventry{主页}{\url{http://www.csuldw.com}}{}{}{}{}
+%\cventry{CSDN}{\url{http://blog.csdn.net/dream_angel_z}}{}{}{}{}
+%\cventry{GitHub}{\url{https://github.com/csuldw}}{}{}{}{}
+
+%采用下采样技术来解决正负样本不均衡问题,并使用mRMR做特征选择,
+\section{个人经验}
+\cventry{机器学习}
+{\textnormal{（1）科研项目.将机器学习应用于生物信息领域}}
+{\textnormal{使用GBDT算法预测蛋白质RNA结合位点(二分类).项目中负责整个实验实现,包括数据提取、预处理、特征工程、模型训练与评估等.其中,使用了标准化、采样、mRMR特征选择、正则化等常用技术.同时用Python 实现了交叉验证来训练模型和参数调优,并将GBDT与SVM、Adaboost、RF等主流算法进行了对比.通过本项目,熟悉了机器学习的实验流程,理解了GBDT 算法的核心思想,同时也强化了对scikit-learn、libsvm 及python 的使用.
+\newline （2）云计算实验课助教.协助导师管理本科生实验课程,负责帮助学生解决实验过程中遇到的一些问题.通过此任务,学习了Hadoop集群搭建,HDFS文件操作等基础知识,并初步了解了MapReduce的基本原理.
+\newline （3）负责研究生自由探索项目一项,担任项目组长,已投稿高质量SCI论文二篇,一篇关于回归分析（SCI检索）,一篇关于分类研究（二审）.经过此项目,进一步提高了自己的写作和表达能力.
+\newline （4）使用Python 实现过LR、DT、 Adaboost、KNN、K-Means 等多个ML算法（见\href{https://github.com/csuldw/MachineLearning}{Github}）,通过此项练习,锻炼了自己的编码能力,并在理论的基础上进一步理解了这些算法的思想及应用场景}} {}
+{}{}
+
+\cventry{数学建模}{\textnormal{大学生数学建模大赛}}{\textnormal{校赛中建立一个基于模糊综合评价法的定量评估模型来评估我们学校各个学院的科研能力,获得二等奖.国赛中建立了一个多目标函数非线性优化决策模型,并使用MATLAB编码求最优解,获得三等奖.通过数模竞赛,锻炼了自己分析问题和建模求解能力,同时也加深了对数学方法使用的浓厚兴趣}}{}{}{}
+
+\cventry{Linux}{\textnormal{服务器配置\&搭建Torque集群.负责安装和配置实验室60+台服务器（ContOS系统）}}{\textnormal{并独立搭建基于Torque的高性能集群环境.其中,使用NFS来实现集群间文件共享,并配置ssh用以节点之间无密码登录,同时采用NIS对用户进行统一管理.期间遇到过不少问题,最终都通过查阅资料得以解决,实现了集群的并行计算.在给其他同学提供了一个良好的科研实验环境的同时,还提升了自己的问题解决能力及动手能力}}{}{}{}
+
+\cventry{Python}{\textnormal{数据爬取.负责提取Web Server的运行结果.根据提供的参数列表（$1 0^4+$）}}{\textnormal{逐行提交至Server,然后使用urllib2模块抓取结果页面,再结合正则表达式过滤无关数据并输出.通过此项任务,初步熟悉了爬虫原理}}{}{}{}
+
+\cventry{J2EE}{\textnormal{J2EE项目}}{\textnormal{开发过《基于SSH的音像制品出租与销售网》、《南书房-- 网上书城》及《知音交友网》等网站}}{}{}{}
+
+\section{获得奖励}
+\cventry{2015}{\textnormal{研究生国家奖学金(\textnormal{Top 3\%})}}{中南大学优秀研究生\textnormal{(Top 5\%)}}{中软实训"个人优胜奖"与"优秀开发团队奖"}{}{}
+%\cventry{2014}{\textnormal{"个人优胜奖"与"优秀开发团队奖"}}{中软国际实训中心给优秀团队和个人颁发的奖}{}{}{}
+\cventry{2013}{\textnormal{湖南农业大学"优秀毕业生"}}{\textnormal{Top 5\%}}{}{}{}
+\cventry{2012}{\textnormal{国家励志奖学金, 湖南农业大学数学建模大赛二等奖,校级二等奖学金,三好学生}}{}{}{}{}
+\cventry{2011}{\textnormal{全国大学生数学建模竞赛湖南赛区本科组三等奖, 优秀学生干部}}{}{}{}{}
+\cventry{2010}{\textnormal{校级一等奖学金, 国家一等助学金, 三好学生}}{}{}{}{}
+
+\section{个人评价}
+\cventry{1}{\textnormal{热爱机器学习,热爱技术,研究欲强,性格温和,有耐心,能快速适应新环境}}{}{}{}{}{}
+\cventry{2}{\textnormal{对自己要求严格,时间观念强,做事认真负责,有始有终,不轻言放弃}}{}{}{}{}{}
+\cventry{3}{\textnormal{团队合作能力强,具有较强的合作分工意识,并能适应高强度工作压力}}{}{}{}{}{}
+
+%\section{发表论文}
+%\cventry{[1]}
+%{\textnormal{Chao Fan,}\textbf{ Diwei Liu}\textnormal{, Rui Huang, Zhigang Chen and Lei Deng}}
+%{PredRSA: A Gradient Boosted Regression Trees Approach for Predicting Protein Solvent Accessibility}
+%{BMC Bioinformatics. 2016; 17(1):8}
+%{}{}{}
+%
+%\cventry{[2]}
+%{\textnormal{Yong Gao, Weilin Hao, Jing Gu,}\textbf{ Diwei Liu}\textnormal{, Chao Fan and Lei Deng}}
+%{PredPhos: An Ensemble Framework for Structure-based Prediction of Phosphorylation Sites}
+%{Journal of Biological Research-Thessalonki, 2015}
+%{}{}{}
+%
+%\cventry{[3]}
+%{\textnormal{Yang Meng, Lei Deng, Zhigang Chen, Cheng Zhou,}\textbf{ Diwei Liu}\textnormal{, Chao Fan, and Ting Yan}}
+%{A Multi-Instance Multi-Label Learning Approach for Protein Domain Annotation}
+%{Springer LNBI, 104-111, 2014}
+%{}{}{}
+
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+%\begin{thebibliography}{99}
+%\bibitem{11} LaTeX入门与提高，高等教育出版社。
+%\end{thebibliography}
+\end{spacing}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

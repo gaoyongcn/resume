@@ -1,0 +1,138 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-2018 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage{xkeyval}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\usepackage{fontawesome}
+
+
+
+%\setCJKmainfont{Adobe Song Std L}  % 如果有安装Adobe Song 字体，就用这个吧
+\setCJKmainfont{SimSun}             % 没有安装Adobe Song 字体的就换回SimSun字体吧
+\setCJKfamilyfont{song}{SimSun}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\usepackage{setspace}
+%\setlength{\hintscolumnwidth}{6cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{7cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{高勇}
+\familyname{}
+\title{\LARGE{算法工程师}\newline \newline \textnormal{可实习一年}}            % optional, remove the line if not wanted
+%{\textcolor[rgb]{0.30,0.50,0.70}{}
+\address{江苏苏州}{ 1993-02-08}                      % optional, remove the line if not wanted
+\phone{(+86)188-6232-1003}
+\email{ gaoyongustc@163.com }
+%\fax{optional}                                   % optional, remove the line if not wanted
+%\extrainfo{\faHome \ \url{http://www.yogolab.com}} % optional, remove the line if not wanted
+%\extrainfo{\faGithub \ \url{github.com/gaoyongcn}}
+\photo[60pt]{avatar.jpg}                                % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}      % optional, remove the line if not wante
+
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+\begin{spacing}{1.01}%%行间距变为1.1
+
+\maketitle
+\section{教育背景}
+
+\cvline{2015 - 现在}{中国科学技术大学软件学院,硕士,软件系统设计,预计2018年3月毕业.}
+\cvline{2010 - 2014}{中南大学软件学院,本科,软件工程.}
+
+\section{专业技能}
+\cventry{编程}{\textnormal{Python, C/C++, Java, Matlab and SQL, 有相关实践经验}}{}{}{}{}
+\cventry{擅长}{\textnormal{机器学习, 数据分析, 数据结构}} {}{}{}{}
+\cventry{熟悉}{\textnormal{Linux, Vim, Git, Markdown, LaTeX}}{}{}{}{}
+\cventry{语言}{\textnormal{英语(CET-6)}}{}{}{}{}
+%\cventry{社区}{\textnormal{GitHub(\url{https://github.com/gaoyongcn}); CSDN(\url{http://blog.csdn.net/u_dog})}}{}{}{}{}
+
+%\section{活动社区}
+%\cventry{主页}{\url{http://www.yogolab.com}}{}{}{}{}
+%\cventry{CSDN}{\url{http://blog.csdn.net/u_dog}}{}{}{}{}
+%\cventry{GitHub}{\url{https://github.com/gaoyongcn}}{}{}{}{}
+
+\section{个人经验}
+\cventry{科研项目}
+{\textnormal{（1）分别使用集成学习和半监督学习方法来预测蛋白质磷酸化位点. 在项目中负责数据提取、预处理、特征工程、模型训练与评估等多个过程，并在独立测试集上与SVM、Adaboost、RF等多个算法以及GPS，PPSP等多个磷酸化位点预测工具进行了对比.熟悉了解SVM和Ensemble集成算法。
+\newline （2）申请通过本科生自由探索计划, 担任项目负责人, 已投稿英文论文两篇, 分别为 SCI 和 EI 检索}} {}
+{}{}{}
+
+\cventry{数学建模}{\textnormal{在全国大学生数学建模竞赛中建立一个基于典型相关分析的数学模型, 对葡萄酒质量进行评价, 利用 SPSS进行数据分析, 获得国家二等奖; 在全美大学生数学建模大赛中建立一个优化模型来优化国内水资源分配, 并使用 MATLAB 和 LINGO 编码求最优解,获得美赛一等奖}}{}{}{}{}
+
+\cventry{Python}{\textnormal{熟练使用 Nnumpy、Pandas、Scikit-learn 工具包及正则表达式进行数据处理和分析,并实现 LR、DT、Adaboost、KNN、KMeans 及 KMeans++ 等多个机器学习算法}}{}{}{}{}
+
+%\cventry{深度学习}{\textnormal{对BP神经网络，卷积神经网络有一定了解，以及掌握TensorFlow深度学习框架一些基本操作}}{}{}{}{}
+
+\section{获得奖励}
+
+\cventry{2014}{\textnormal{中南大学自由探索计划项目顺利结题}}{}{}{}{}
+\cventry{2013}{\textnormal{全美大学生数学建模竞赛一等奖}}{}{}{}{}
+\cventry{2012}{\textnormal{全国大学生数学建模竞赛国家二等奖, 中软实训” 个人优胜奖” 与” 优秀开发团队奖”}}{}{}{}{}
+\cventry{2011}{\textnormal{中软实训” 个人优胜奖”}}{}{}{}{}
+
+\section{发表论文}
+
+\cventry{[1]}
+{\textbf{Yong Gao}\textnormal{, Weilin Hao, Jing Gu, Diwei Liu, Chao Fan and Lei Deng}}
+{PredPhos: An Ensemble Framework for Structure-based Prediction of Phosphorylation Sites}
+{Journal of Biological Research-Thessalonki, 2015}
+{}{}{}
+
+\cventry{[2]}
+{\textbf{Yong Gao}\textnormal{,Weilin Hao and Lei Deng}}
+{Structure-Based Prediction of Protein Phosphorylation Sites Using an
+Ensemble Approach}
+{[M]//Intelligent Computing in Bioinformatics.Springer International Publishing, 2014: 119-
+125}
+{}{}{}
+
+\section{个人评价}
+\cventry{1}{\textnormal{具有较强的适应能力与自学能力, 能够快速适应新环境}}{}{}{}{}{}
+\cventry{2}{\textnormal{做事勤奋认真, 对自己要求严格,做每件事坚持有始有终}}{}{}{}{}{}
+\cventry{3}{\textnormal{热爱机器学习, 渴望学习新知识, 善于向周围人请教学习与归纳总结}}{}{}{}{}{}
+
+
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+%\begin{thebibliography}{99}
+%\bibitem{11} LaTeX入门与提高，高等教育出版社。
+%\end{thebibliography}
+\end{spacing}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

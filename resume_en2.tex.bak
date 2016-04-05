@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Diwei}
+\familyname{Liu}
+\title{Machine Learning \& Data Mining}
+%\address{China}{ChangSha}                                   % optional, remove the line if not wanted
+\phone{187-0748-9940}
+\email{csu.ldw@csu.edu.cn}
+\extrainfo{\faHome {ChangSha, Hunan, China}} % optional, remove the line if not wanted
+
+
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[62pt]{avatar.png}                     % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2014--Present}{Master student in Software Engineerin}{School of Software, Central South University}{expected 2017}{}{}
+\cventry{2009--2013}{B.S. in Information and Computing Sciences (ICS)}{Orient Science \& Technology College, Hunan Agricultural University}{}{}{}
+
+%\section{Internship}
+%\cventry{2012}{Summer Analyst at Morgan Stanley}{E-Trading Infrastructure Department}{}{}{Designed and implemented a BitTorrent based system to speed up trading data precache}
+%\cventry{2011}{Summer internship at EMC Research Shanghai}{}{}{}{Researched on I/O side channel attack in a share-host environment}
+
+
+\section{Skills}
+\cventry{Programming}{\textnormal{Python, C/C++, Java, Shell, Matlab and SQL, with practical experiences.}}{}{}{}{}
+\cventry{Specialty}{\textnormal{Machine Learning \& Data Mining, Optimization, Data Structures.}}{}{}{}{}
+\cventry{Language}{\textnormal{Chinese Mandarin (native) and English (CET-6)}}{}{}{}{}
+\cventry{Others}{\textnormal{Linux, vim, git, SVN, Markdown, LaTeX, JavaScript, CSS, XML and HTML)}}{}{}{}{}
+
+
+\section{Community}
+\cventry{Blog}{\url{http://www.csuldw.com}}{My blog (Chinese)}{}{}{}
+\cventry{CSDN}{\url{http://blog.csdn.net/dream_angel_z}}{}{}{}{}
+\cventry{GitHub}{\url{https://github.com/csuldw}}{}{}{}{}
+
+
+
+\section{Project Experience}
+%% \subsection{Research Projects}
+
+\cventry{2014--Present}
+{Machine Learning and Bioinformatics}
+{Python}
+{Research Project}{}
+{
+Working with Yong Gao, Chao Fan and Prof. Lei Deng. \\
+Applying machine learning techniques to the field of biological information. Using Gradient Tree Boosting algorithm to predict protein-RNA binding residues, and using under-sample technique to solved unbalanced dataset classification. Finally, designing and implementing GTB-based model to predict protein-RNA binding sites.}
+
+\vspace*{0.2\baselineskip}
+\cventry{Apr. 2015}
+{Teaching Assistant (TA)}
+{Hadoop}
+{Cloud Computing Experiment Course}{}
+{Assisting supervisor to manage undergraduates and helping junior students complete basic cloud computing experiments, such as create a simple hadoop cluster.
+}
+
+
+\vspace*{0.2\baselineskip}
+\cventry{2014--2015}
+{Config Server \& Building Cluster}
+{Linux}{}
+{Laboratory Environment Configuration}
+{Independently installing and configuring the laboratory 60+ server (CentOS System) and finally creating a Torque-based high-performance cluster environment. In cluster configuration, using NFS to implement file sharing between clusters and NIS to carry out the unified management of cluster user, etc.
+}
+
+
+
+\vspace*{0.2\baselineskip}
+\cventry{Mar. 2015}
+{ZhiYin Dating Site}
+{Java, Oracle, Tomcat, SVN}
+{Course Project}{}
+{Working with Xiaoli Yan, Liangliang Yu, Chunxi Ye, Tianyu Cai and Yang Ding. \\
+A SSH-based website, used to make friends.
+}
+
+
+
+\vspace*{0.2\baselineskip}
+\cventry{Oct. 2014}
+{NanShuFang Online Book Store}
+{Java, Mysql, Tomcat}
+{Course Project}{}
+{Working with Chao Fan, Ting Yan et al. \\
+A Online Book store, used to sale books.}
+
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{Audiovisual Rental and Sale Site}
+{Java, Tomcat}
+{Graduation Project}{}
+{
+A SSH-based website, used to rental and sale audiovisual.
+}
+
+
+\section{Awards}
+\cventry{2015}{\textnormal{National Scholarship for graduate students}}{(Top 3\%)}{}{}{}
+\cventry{2015}{\textnormal{Excellent postgraduate}}{(CSU, Top 5\%)}{}{}{}
+\cventry{2013}{\textnormal{Outstanding Graduates at Hunan Agricultural University}}{(HUNAU, Top 5\%)}{}{}{}
+\cventry{2012}{\textnormal{Second Grade Scholarship for Undergraduates}}{}{}{}{}
+\cventry{2012}{\textnormal{Second Price in Mathematical Contest in Modeling of HUNAU}}{}{}{}{}
+\cventry{2011}{\textnormal{Third Prize in China Undergraduate Mathematical Contest in Modeling}}{}{}{}{}
+\cventry{2010}{\textnormal{First Grade Scholarship for Undergraduates, HUNAU}}{}{}{}{}
+
+
+
+\section{Publications}
+
+\cventry{[1]}
+{\textnormal{Chao Fan,}\textbf{ Diwei Liu}\textnormal{, Rui Huang, Zhigang Chen and Lei Deng}}
+{PredRSA: A Gradient Boosted Regression Trees Approach for Predicting Protein Solvent Accessibility}
+{BMC Bioinformatics. 2016; 17(1):8}
+{}{}{}
+
+
+\cventry{[2]}
+{\textnormal{Yong Gao, Weilin Hao, Jing Gu,}\textbf{ Diwei Liu}\textnormal{, Chao Fan and Lei Deng}}
+{PredPhos: An Ensemble Framework for Structure-based Prediction of Phosphorylation Sites}
+{Journal of Biological Research-Thessalonki, 2015}
+{}{}{}
+
+\cventry{[3]}
+{\textnormal{Yang Meng, Lei Deng, Zhigang Chen, Cheng Zhou,}\textbf{ Diwei Liu}\textnormal{, Chao Fan, and Ting Yan}}
+{A Multi-Instance Multi-Label Learning Approach for Protein Domain Annotation}
+{Springer LNBI, 104-111, 2014}
+{}{}{}
+
+
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+
+
+\end{document}

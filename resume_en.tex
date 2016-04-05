@@ -1,0 +1,186 @@
+% resume.tex
+% !TEX program = xelatex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.55in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{ulem}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{url}
+\usepackage{marvosym}
+\usepackage{pifont}
+\usepackage{fontawesome}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%https://github.com/csuldw/resume.git
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{\huge Yong Gao} & \Telefon \ \textbf{(+86) 18862321003} \\
+\textbf{1993-02-08, SuZhou, China} &  \faEnvelope \ \textbf{gaoyongustc@163.com} \\
+\textbf{Machining Learning \& Data Mining} &  \faHome \ \textbf{\url{http://www.yogolab.com}} \\
+
+\end{tabular*}
+
+%\begin{center}\parskip=1.1em
+%{\LARGE \textbf{Diwei Liu}}
+%
+%\ \faEnvelope \ csu.ldw@csu.edu.cn  \ \ \ \ \
+%\ \Telefon \ (+86) 18707489940 \ \
+%\ \faHome \ \url{http://www.csuldw.com}   \
+%\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\faGraduationCap \ Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{School of Software, University of Science and Technology of China, Suzhou, China.}}
+		{Sep. 2015 -- Mar 2018(expected)}
+	\\
+	\headerrow
+		{Master student in Software Engineering.}
+		
+    \item
+	\headerrow
+		{\textbf{School of Software, Central South University, ChangSha, China.}}
+		{Sep. 2010 --  Jun. 2014 }
+	\\
+	\headerrow
+        {B.S. in in Software Engineering}		
+
+\end{itemize}
+
+\hrule
+%\vspace{-0.4em}
+\subsection*{\faStar\ Skills}
+
+
+\begin{itemize}
+    \parskip=0.01em
+     \item Programming: Python, C/C++, Java, Shell, Matlab and SQL, with practical experiences.
+     \item Numerical Analysis and Computer Science: Machine Learning \& Data Mining (LR, DT, RF, SVM, KNN, NB, etc), Optimization, Data Structures.
+     \item Language: English (CET-6).
+     \item Others: Linux, vim, git, SVN, Markdown, LaTeX, JavaScript.
+     %\item GitHub: \url{https://github.com/csuldw}
+\end{itemize}
+
+
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{\faFlag\ Professional Experience}
+
+\begin{itemize}
+	%\parskip=0.1em
+
+    \item
+    \headerrow
+	{\textbf{Machine Learning - Related}}{}
+    \headerrow
+	   {program of Central South University Free Exploration}
+	   {June. 2013 -- Jan. 2014}
+	\begin{itemize*}
+        \item Applying machine learning techniques to the field of biological information. Using ensemble algorithm to predict protein phosphorylation sites, and using under-sample technique to solved unbalanced dataset classification.
+	\end{itemize*}
+
+    \headerrow
+	   {Mathematical Contest in Modeling}
+	   {Apr. 2011 -- May. 2013}
+	\begin{itemize*}
+        \item  
+	A mathematical model based on canonical correlation analysis was established to evaluate the quality of wine, and the quality of the wine was evaluated using SPSS in the Mathematical Contest in Modeling of China;An optimization model was established to optimize the allocation of domestic water resources in the Mathematical Modeling Contest of America,using the software MATLAB and LINGO  to obtian the optimal solution.
+	\end{itemize*}
+
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+
+
+\subsection*{\faHeart\ Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+
+    \item
+    \headerrow
+    {Finish the program of Central South University Free Exploration .}
+    {2013 - 2014}
+
+    \item
+    \headerrow
+    {Meritorious Winner of Mathematical Contest in Modeling of America. }
+    {2013}
+
+    \item
+    \headerrow
+    {The 2nd Price of Mathematical Contest in Modeling of China.}
+    {2012}
+
+\end{itemize}
+
+
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{\faBook\ Publications}
+
+\begin{itemize}
+  \parskip=0.1em
+
+  \item [1.] \textbf{Yong Gao}, Weilin Hao, Jing Gu, Diwei Liu, Chao Fan and Lei Deng. PredPhos: An Ensemble Framework for Structure-based Prediction of Phosphorylation Sites. Journal of Biological Research-Thessalonki, 2015.
+  \item [2.] \textbf{Yong Gao}, Weilin Hao and Lei Deng, structure-Based Prediction of Protein Phosphorylation Sites Using an Ensemble Approach, [M]//Intelligent Computing in Bioinformatics.Springer International Publishing, 2014: 119-125.
+
+
+
+\end{itemize}
+
+
+
+
+
+\end{document}

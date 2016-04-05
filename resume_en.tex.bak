@@ -1,0 +1,213 @@
+% resume.tex
+% !TEX program = xelatex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.55in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{ulem}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{url}
+\usepackage{marvosym}
+\usepackage{pifont}
+\usepackage{fontawesome}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{\huge Diwei Liu} & \Telefon \ \textbf{(+86) 187-0748-9940} \\
+\textbf{1993-07-13, HuNan, China} &  \faEnvelope \ \textbf{csu.ldw@csu.edu.cn  } \\
+\textbf{Machining Learning \& Data Mining} &  \faHome \ \textbf{\url{http://www.csuldw.com}} \\
+
+\end{tabular*}
+
+%\begin{center}\parskip=1.1em
+%{\LARGE \textbf{Diwei Liu}}
+%
+%\ \faEnvelope \ csu.ldw@csu.edu.cn  \ \ \ \ \
+%\ \Telefon \ (+86) 18707489940 \ \
+%\ \faHome \ \url{http://www.csuldw.com}   \
+%\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\faGraduationCap \ Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+    \item
+	\headerrow
+		{\textbf{School of Software, Central South University, ChangSha, China.}}
+		{Sep. 2014 --  Jun. 2017 (expected)}
+	\\
+	\headerrow
+        {Master student in Software Engineering, expected Jun 2017.}
+
+	\item
+	\headerrow
+		{\textbf{Orient Science \& Technology College of Hunan Agricultural University, ChangSha, China.}}
+		{Sep. 2009 -- June 2013}
+	\\
+	\headerrow
+		{B.S. in Information and Computing Sciences (ICS).}
+
+\end{itemize}
+
+\hrule
+%\vspace{-0.4em}
+\subsection*{\faStar\ Skills}
+
+
+\begin{itemize}
+    \parskip=0.01em
+     \item Programming: Python, C/C++, Java, Shell, Matlab and SQL, with practical experiences.
+     \item Computer Science: Machine Learning \& Data Mining (LR, DT, RF, SVM, KNN, NB, etc), Optimization, Data Structures.
+     \item Language: Chinese Mandarin (native) and English (CET-6).
+     \item Others: Linux, vim, git, SVN, Markdown, LaTeX, JavaScript, CSS, XML and HTML.
+     %\item GitHub: \url{https://github.com/csuldw}
+\end{itemize}
+
+
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{\faFlag\ Professional Experience}
+
+\begin{itemize}
+	%\parskip=0.1em
+
+    \item
+    \headerrow
+	{\textbf{Machine Learning - Related}}{}
+    \headerrow
+	   {Subject of Research, School of Software, Central South University (CSU)}
+	   {June. 2014 -- Jan. 2016}
+	\begin{itemize*}
+        \item Applying machine learning techniques to the field of biological information. Using Gradient Tree Boosting algorithm to predict protein-RNA binding residues, and using under-sample technique to solved unbalanced dataset classification.
+        \item Designing and implementing GTB-based model to predict protein-RNA binding sites.
+	\end{itemize*}
+
+    \headerrow
+	   {Teaching Assistant of Cloud Computing Experiment Course, School of Software, CSU}
+	   {Apr. 2015 -- May. 2015}
+	\begin{itemize*}
+        \item Assisting supervisor to manage undergraduates and helping junior students complete basic cloud computing experiments, such as create a simple hadoop cluster.
+	\end{itemize*}
+
+    \item
+    \headerrow
+		{\textbf{Linux - Related}}{}
+	\\
+    \headerrow
+		{Independently building a high-performance cluster, School of Software, CSU}
+		{Dec. 2014 -- Feb. 2015}
+	\begin{itemize*}
+        \item  Independently installing and configuring the laboratory 60+ server (CentOS System) and finally creating a Torque-based high-performance cluster environment. In cluster configuration, using NFS to implement file sharing between clusters and NIS to carry out the unified management of cluster user, etc.
+	\end{itemize*}
+
+    \item
+    \headerrow
+		{\textbf{J2EE - Related}}{}
+	\\
+    \headerrow
+		{Audiovisual Rental and Sale site, NanShuFang Online Book store, ZhiYin Dating site, etc.}
+		{Jan. 2012 -- Mar. 2015}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+
+
+\subsection*{\faHeart\ Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+    \item
+    \headerrow
+    {National Scholarship for graduate students (Top 3\%); Excellent postgraduate.}
+    {2014 - 2015}
+
+    \item
+    \headerrow
+    {A scholarship holder: the first scholarship once and the second scholarship once.}
+    {2009 - 2013}
+
+    \item
+    \headerrow
+    {Outstanding graduates at Hunan Agricultural University (HUNAU) (Top 5\%).}
+    {2013}
+
+    \item
+    \headerrow
+    {The 2nd Price of Mathematical Contest in Modeling of HUNAU; National Scholarship for Encouragement.}
+    {2012}
+
+    \item
+    \headerrow
+    {The 3rd Prize of China Undergraduate Mathematical Contest in Modeling.}
+    {2011}
+
+\end{itemize}
+
+
+
+\hrule
+\vspace{-0.4em}
+
+\subsection*{\faBook\ Publications}
+
+\begin{itemize}
+  \parskip=0.1em
+
+  \item [1.] Chao Fan, \textbf{Diwei Liu}, Zhigang Chen and Lei Deng. PredRSA: A Gradient Boosted Regression Trees Approach for Predicting Protein Solvent Accessibility. BMC Bioinformatics, 2015.
+  \item [2.] Yong Gao, Weilin Hao, Jing Gu, \textbf{Diwei Liu}, Chao Fan and Lei Deng. PredPhos: An Ensemble Framework for Structure-based Prediction of Phosphorylation Sites. Journal of Biological Research-Thessalonki, 2015.
+
+  \item [3.] Yang Meng, Lei Deng, Zhigang Chen, Cheng Zhou, \textbf{Diwei Liu}, Chao Fan, and Ting Yan. A Multi-Instance Multi-Label Learning Approach for Protein Domain Annotation. Springer LNBI, 104-111, 2014.
+
+\end{itemize}
+
+
+
+
+
+\end{document}
